@@ -13,20 +13,20 @@ function MyApp({ Component, pageProps }) {
           site_name: 'SiteName',
           images: [
             {
-              url: 'https://demo.ie/react.jpg',
+              url: 'https://demo/react.jpg',
               width: 800,
               height: 600,
               alt: 'Og Image Alt',
               type: 'image/jpeg',
             },
             {
-              url: 'https://demo.ie/react.jpg',
+              url: 'https://demo/react.jpg',
               width: 1600,
               height: 900,
               alt: 'Og Image Alt Second',
               type: 'image/jpeg',
             },
-            { url: 'https://demo.ie/react.jpg' },
+            { url: 'https://demo/react.jpg' },
           ]
         }} />
       <Component {...pageProps} />
