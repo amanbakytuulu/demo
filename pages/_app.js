@@ -8,25 +8,25 @@ function MyApp({ Component, pageProps }) {
         openGraph={{
           type: 'website',
           title:'Home',
-          site_name:'new hone site',
+          site_name:'demo-list',
           url: 'https://demo-list-amanbakytuulu.vercel.app/',
-          site_name: 'SiteName',
+          description:'example for opengraph',
           images: [
             {
-              url: 'https://demo-list-amanbakytuulu.vercel.app/logo.png',
+              url: 'https://demo-list-amanbakytuulu.vercel.app/logo.jpg',
               width: 800,
               height: 600,
               alt: 'Og Image Alt',
               type: 'image/jpeg',
             },
             {
-              url: 'https://demo-list-amanbakytuulu.vercel.app/logo.png',
+              url: 'https://demo-list-amanbakytuulu.vercel.app/logo.jpg',
               width: 1600,
               height: 900,
               alt: 'Og Image Alt Second',
               type: 'image/jpeg',
             },
-            { url: 'https://demo-list-amanbakytuulu.vercel.app/logo.png' },
+            { url: 'https://demo-list-amanbakytuulu.vercel.app/logo.jpg' },
           ]
         }} />
       <Component {...pageProps} />
