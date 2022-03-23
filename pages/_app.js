@@ -13,20 +13,20 @@ function MyApp({ Component, pageProps }) {
           site_name: 'SiteName',
           images: [
             {
-              url: 'https://ninja-list-amanbakytuulu.vercel.app/react.jpg',
+              url: 'https://ninja-list-amanbakytuulu.vercel.app/logo.png',
               width: 800,
               height: 600,
               alt: 'Og Image Alt',
               type: 'image/jpeg',
             },
             {
-              url: 'https://ninja-list-amanbakytuulu.vercel.app/react.jpg',
+              url: 'https://ninja-list-amanbakytuulu.vercel.app/logo.png',
               width: 1600,
               height: 900,
               alt: 'Og Image Alt Second',
               type: 'image/jpeg',
             },
-            { url: 'https://ninja-list-amanbakytuulu.vercel.app/react.jpg' },
+            { url: 'https://ninja-list-amanbakytuulu.vercel.app/logo.png' },
           ]
         }} />
       <Component {...pageProps} />
