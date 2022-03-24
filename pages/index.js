@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home({datas}) {
+  console.log(JSON.parse(datas));
   return (
     <div className={styles.container}>
       <Head>
@@ -66,4 +67,16 @@ export default function Home() {
       </footer>
     </div>
   )
+}
+
+export async function getStaticProps(ctx){
+  const url='https://graph.facebook.com/v13.0/285795466619887/events?access_token=EAAFYGLqoY2IBAGgW9pZAvFz1lt1jfG8dK1NnpgyqgPIvFA4cZCWnWW3uZAGrojvaQaTQdY0jsDew2Q3SUhZAn5mqQZCgsx9ZB6xaEy7FgM3HU4oRlfZAWFeprKhP4ZAB5XTS72JW9Vlia3gy8ylFDRodxp8MaE3Xl00iXivhaiM9m0wVziiEZBKZB4YWplxEIu3tUZD'
+  let data= await fetch(url).then((data)=>data.json())
+  .catch((error)=>console.log(error))
+  const datas=JSON.stringify(data);
+  return{
+    props:{
+      datas
+    }
+  }
 }
